@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Vaibhav | Portfolio</title>
+    <meta name="description" content="Colorful, interactive developer portfolio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23254efd'/><text x='50' y='62' font-size='54' text-anchor='middle' fill='white' font-family='Arial'>V</text></svg>">
+  </head>
+  <body>
+    <div class="backdrop-gradient" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">V</span>
+        <span class="brand-name">Vaibhav</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="sun">☀</span>
+        <span class="moon">🌙</span>
+      </button>
+    </header>
+
+    <main>
+      <section id="home" class="section hero section-observe">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1>Vaibhav</h1>
+            <p class="tagline">I believe building software that matters.</p>
+            <div class="cta-group">
+              <a href="#projects" class="btn primary">View Projects</a>
+              <a href="#contact" class="btn ghost">Contact Me</a>
+            </div>
+            <div class="socials">
+              <a href="https://github.com/43vaibhav" target="_blank" rel="noreferrer" aria-label="GitHub">🐙</a>
+              <a href="https://www.linkedin.com/in/vaibhav-adhikari-8b64a3284/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+              <a href="mailto:vadhikari077@gmail.com" aria-label="Email">@</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="blob"></div>
+            <div class="card-shadow">
+              <div class="profile-card">
+                <img src="assets/me.jpg" alt="Vaibhav profile photo" />
+                <div class="profile-meta">
+                  <span class="badge">Open to work</span>
+                  <span class="badge alt">AI • Cloud • Java</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-observe">
+        <div class="container grid-2">
+          <div>
+            <h2>About Me</h2>
+            <p>
+                I'm a developer who loves harnessing AI and cloud technologies to craft scalable solutions that emerge from curiosity-driven exploration. I'm drawn to the 'what if' questions that lead to solutions others haven't considered.
+            </p>
+            <ul class="checklist">
+              <li>AI and ML implementation/li>
+              <li>Scalable system design</li>
+              <li>Creative algorithmic solutions</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <img src="assets/me.jpg" alt="Vaibhav portrait" />
+            <div class="about-card-body">
+              <h3>Based in India</h3>
+              <p>Available for freelance and full-time roles.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-observe">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="chips">
+            <span class="chip">AI Development</span>
+            <span class="chip">Cloud Development</span>
+            <span class="chip">Java (Core)</span>
+            <span class="chip">OOP</span>
+            <span class="chip">DSA</span>
+            <span class="chip">Python</span>
+            <span class="chip">Machine Learning</span>
+
+
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-observe">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="filters" role="tablist" aria-label="Project filters">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-btn" data-filter="finished" role="tab">Finished</button>
+            <button class="filter-btn" data-filter="wip" role="tab">Working On</button>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card" data-status="finished">
+              <div class="project-media" style="--bg:url('https://sdmntpritalynorth.oaiusercontent.com/files/00000000-35b4-6246-8830-d7fe46a41a8f/raw?se=2025-08-25T14%3A56%3A10Z&sp=r&sv=2024-08-04&sr=b&scid=e20d7baa-9fa0-5800-bf6f-ba5a6499cd40&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-25T08%3A44%3A59Z&ske=2025-08-26T08%3A44%3A59Z&sks=b&skv=2024-08-04&sig=vN8v66vYEnvzDz%2BqG2Ta5tCLlB3ZeCx05E/VzvEqS4I%3D')"></div>
+              <div class="project-body">
+                <h3>MedBot — Medical Chatbot</h3>
+                <p>Conversational assistant for basic medical queries and triage guidance.</p>
+                <div class="tags"><span>AI & ML</span><span>NLP</span><span>Database</span></div>
+                <div class="actions">
+                  <a href="#" class="btn tiny">Live</a>
+                  <a href="#" class="btn tiny ghost">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-status="finished">
+              <div class="project-media" style="--bg:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop')"></div>
+              <div class="project-body">
+                <h3>Research Paper Summarizer</h3>
+                <p>Summarizes long-form research PDFs into concise, structured takeaways.</p>
+                <div class="tags"><span>NLP</span><span>Transformers</span><span>Summarization</span></div>
+                <div class="actions">
+                  <a href="#" class="btn tiny">Live</a>
+                  <a href="#" class="btn tiny ghost">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-status="wip">
+              <div class="project-media" style="--bg:url('https://sdmntpraustraliaeast.oaiusercontent.com/files/00000000-f4a0-61fa-b9d9-a3f802ff6e99/raw?se=2025-08-25T15%3A00%3A55Z&sp=r&sv=2024-08-04&sr=b&scid=395f9b6d-5403-5308-ac85-c14d0a1930c8&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-25T13%3A52%3A04Z&ske=2025-08-26T13%3A52%3A04Z&sks=b&skv=2024-08-04&sig=kh0zk2cYeiCCAKu2LFmiShksbHSQCVSgJwxkdw3edP4%3D')"></div>
+              <div class="project-body">
+                <h3>Flood Detection</h3>
+                <span class="badge">Work in progress</span>
+                <p>Early warning detection using data signals and geospatial cues.</p>
+                <div class="tags"><span>AI</span><span>Data</span><span>WIP</span></div>
+                <div class="actions">
+                  <a href="#" class="btn tiny disabled" aria-disabled="true">Live soon</a>
+                  <a href="#" class="btn tiny ghost">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-status="wip">
+                <div class="project-media" style="--bg:url('https://sdmntpreastus.oaiusercontent.com/files/00000000-d8dc-61f9-b7a6-2051088259da/raw?se=2025-08-25T15%3A28%3A01Z&sp=r&sv=2024-08-04&sr=b&scid=8ef484f9-18ec-55ee-b2ca-c703e2b77558&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-24T22%3A04%3A43Z&ske=2025-08-25T22%3A04%3A43Z&sks=b&skv=2024-08-04&sig=akDTMRKHxxpZaiw/ivQ6%2B/zEfUQSVH5aYQs%2BabkfsCk%3D')"></div>
+                <div class="project-body">
+                  <h3>Tiffin Service</h3>
+                  <span class="badge">Work in progress</span>
+                  <p>Making healthy, affordable homemade meals accessible through seamless online ordering.</p>
+                  <div class="tags"><span>HTML</span><span>Data</span><span>WIP</span></div>
+                  <div class="actions">
+                    <a href="#" class="btn tiny disabled" aria-disabled="true">Live soon</a>
+                    <a href="#" class="btn tiny ghost">Code</a>
+                  </div>
+                </div>
+              </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section section-observe">
+        <div class="container">
+          <h2>Certificates</h2>
+          <ul class="checklist">
+            <li><a href="#" target="_blank" rel="noreferrer">Java Programming</a></li>
+            <li><a href="#" target="_blank" rel="noreferrer">MongoDB</a></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Oracle Cloud Infrastructure AI Foundations</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-observe">
+        <div class="container grid-2">
+          <div>
+            <h2>Contact</h2>
+            <p>Have an opportunity or idea? Let's build something colorful together.</p>
+            <ul class="contact-list">
+              <li><span>📧</span> <a href="mailto:vadhikari@gmail.com">vadhikari077@gmail.com</a></li>
+              <li><span>📱</span> <a href="tel:+91 74097 31732">+91 74097 31792</a></li>
+              <li><span>💼</span> <a href="https://www.linkedin.com/in/vaibhav-adhikari-8b64a3284/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><span>🐙</span> <a href="https://github.com/43vaibhav" target="_blank" rel="noreferrer">github.com/43vaibhav</a></li>
+            </ul>
+          </div>
+
+          <form id="contactForm" class="card" action="https://formspree.io/f/your-id" method="POST" novalidate>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="consent" required />
+              <span>I agree to be contacted back.</span>
+            </label>
+            <button type="submit" class="btn primary full">Send</button>
+            <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Vaibhav. Built with love and gradients.</p>
+        <a class="to-top" href="#home">↑ Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+  </body>
+  </html>
+
+
+
