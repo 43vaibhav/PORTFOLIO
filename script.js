@@ -53,20 +53,21 @@ const root = document.documentElement;
   document.querySelectorAll('.section-observe').forEach(el => obs.observe(el));
 })();
 
-// Filters for projects
-(function projectFilters() {
-  const buttons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.project-card');
-  buttons.forEach(btn => btn.addEventListener('click', () => {
-    buttons.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    cards.forEach(card => {
-      const isMatch = filter === 'all' || (card.dataset.status || '').toLowerCase() === filter;
-      card.classList.toggle('hide', !isMatch);
+// Project filter logic
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const filter = this.getAttribute('data-filter');
+    document.querySelectorAll('.project-card').forEach(card => {
+      if (filter === 'all' || card.dataset.status === filter) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
     });
-  }));
-})();
+  });
+});
 
 // Smooth scroll for internal links
 (function smoothAnchors() {
